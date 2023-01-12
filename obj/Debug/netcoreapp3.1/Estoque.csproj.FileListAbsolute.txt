@@ -60,3 +60,6 @@ C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Index.cshtml.g.cs
 C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\NovoProduto.cshtml.g.cs
 C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\AtualizarProduto.cshtml.g.cs
+C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\DetalhesProduto.cshtml.g.cs
+C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Movimentacoes\defaut.cshtml.g.cs
+C:\Users\gquindere\source\repos\Estoque\Estoque\obj\Debug\netcoreapp3.1\Razor\Views\Movimentacoes\NovaMovimentacao.cshtml.g.cs

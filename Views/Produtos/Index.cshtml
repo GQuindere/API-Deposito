@@ -63,6 +63,10 @@
                                 <i class="fa fa-pencil-square-o"></i>
                             </a>
 
+                            <a asp-controller="Produtos" asp-action="DetalhesProduto" asp-route-produtoId="@item.ProdutoId" class="btn btn-sm btn-outline-warning">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+
                             <form asp-controller="Produtos" asp-action="ExcluirProduto" asp-route-produtoId="@item.ProdutoId">
                                 <button type="submit" class="btn btn-sm btn-outline-danger">
                                     <i class="fa fa-times-circle"></i>

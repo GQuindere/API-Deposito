@@ -1,0 +1,35 @@
+﻿@model Estoque.Models.Produto
+
+@{ 
+    ViewData["Title"] = "Detalhes e movimentacoes do produto " + Model.Nome;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-10 border border-light rounded p-5">
+            <h5 class="text-primary"><strong>Detalhes e movimentacoes do produto @Model.Nome</strong></h5>
+            <hr/>
+            <h6>Quantidade - @Model.Quantidade</h6>
+            <h6>Preco - @Model.Preco</h6>
+            <h6>Categoria - @Model.Categoria.Nome</h6>
+            <hr/>
+
+            <div class="container border border-light rounded shadow p-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h6>Movimentacoes</h6>
+                    </div>
+
+                    <div class="col-4">
+                        <a asp-action="NovaMovimentacao" asp-controller="Movimentacoes" asp-route-produtoId="@Model.ProdutoId" class="btn btn-sm btn-outline-success">
+                            Nova Movimentacao
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                
+            </div>
+
+        </div>
+    </div>
+</div>

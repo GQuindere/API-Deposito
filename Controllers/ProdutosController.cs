@@ -30,6 +30,13 @@ namespace Estoque.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> DetalhesProduto(int produtoId)
+        {
+            Produto produto = await _contexto.Produtos.Include(p => p.Categoria).FirstOrDefaultAsync(p => p.ProdutoId == produtoId);
+            return View(produto);
+        }
+
         [HttpPost]
         public async Task<IActionResult> NovoProduto(Produto produto)
         {
@@ -64,6 +71,15 @@ namespace Estoque.Controllers
             }
             ViewData["CategoriaId"] = new SelectList(await _contexto.Categorias.ToListAsync(), "CategoriaId", "Nome", produto.CategoriaId);
             return View(produto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ExcluirProduto(int produtoId)
+        {
+            Produto produto = await _contexto.Produtos.FindAsync(produtoId);
+            _contexto.Produtos.Remove(produto);
+            await _contexto.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
     }
